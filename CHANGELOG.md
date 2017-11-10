@@ -1,6 +1,6 @@
 # Roadmap
 
-Intership Link 
+Internship Link 
 - [ ] Feature
 
 Features that have a check mark are complete.

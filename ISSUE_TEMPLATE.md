@@ -1,5 +1,5 @@
 ### Installed product versions
-- Intership Link: [example 1.0.0]
+- Internship Link: [example 1.0.0]
 
 ### Description
 Replace this text with a short description
