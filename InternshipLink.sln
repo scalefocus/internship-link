@@ -16,10 +16,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		CHANGELOG.md = CHANGELOG.md
 		CONTRIBUTING.md = CONTRIBUTING.md
+		COURSE.md = COURSE.md
+		FEATURES.md = FEATURES.md
 		ISSUE_TEMPLATE.md = ISSUE_TEMPLATE.md
 		LICENSE = LICENSE
 		README.md = README.md
-		ROADMAP.md = ROADMAP.md
+		SCHEDULE.md = SCHEDULE.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternshipLink.Web", "src\InternshipLink.Web\InternshipLink.Web.csproj", "{9A4BE9AA-BD3B-4BDC-9E30-E867F85A1BDF}"
