@@ -11,7 +11,7 @@
   - [x] **Day 5** - ASP.NET MVC create and debug tips
   - [x] **Day 6** - Routing, controllers, models and views
   - [ ] **Day 7** - Entity framework code first
-  - [ ] **Day 8** - Post, validate and save data
+  - [ ] **Day 8** - Manage, validate and persist data
 - [ ] **Week 3**
   - [ ] **Day 9** - Development
   - [ ] **Day 10** - Development

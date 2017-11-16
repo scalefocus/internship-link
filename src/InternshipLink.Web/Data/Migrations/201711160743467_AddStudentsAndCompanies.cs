@@ -3,7 +3,7 @@ namespace InternshipLink.Web.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialAdd : DbMigration
+    public partial class AddStudentsAndCompanies : DbMigration
     {
         public override void Up()
         {
@@ -13,6 +13,7 @@ namespace InternshipLink.Web.Data.Migrations
                     {
                         ID = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false, maxLength: 80),
+                        NumberOfEmployees = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID);
             
@@ -20,11 +21,11 @@ namespace InternshipLink.Web.Data.Migrations
                 "dbo.Students",
                 c => new
                     {
-                        Number = c.Long(nullable: false, identity: true),
+                        ID = c.Long(nullable: false, identity: true),
                         FirstName = c.String(nullable: false, maxLength: 40),
                         LastName = c.String(maxLength: 40),
                     })
-                .PrimaryKey(t => t.Number);
+                .PrimaryKey(t => t.ID);
             
         }
         
