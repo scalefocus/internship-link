@@ -9,14 +9,18 @@ Features that have a check mark are complete.
 - [ ] Add default admin user seed (admin/admin)
 - [ ] Admin register only for authorized admin users
 - [ ] Add student major entity (Major) - ID, Name
-- [ ] Enhance student with MiddleName, Major ref., Year
-- [ ] Enhance student list commands for admin users
-- [ ] Enhance student list commands for self editing 
-- [ ] Add student import tool (during db context seed, using CSV file)
+- [ ] Extends student with MiddleName, Major ref., Year, Group
+- [ ] Extend student list commands for admin users
+- [ ] Extend student list commands for self editing 
+- [ ] Add CSV import tool
+- [ ] Add Student import 
+- [ ] Add Major import
 - [ ] Add filters to student list - name, number
 - [ ] Add sort by column in student list
 - [ ] Add paging in student list
+- [ ] Extend Company with Email, Description, Phone, Address, City
 - [ ] Company CRUD(controller, views, models)
 - [ ] Company list command available to admin users only;
-- [ ] Internship - name, companies, companies interns count, students
+- [ ] Internship - name, duration, companies, companies interns count, students
 - [ ] Internship CRUD
+- [ ] Internship link module/page
