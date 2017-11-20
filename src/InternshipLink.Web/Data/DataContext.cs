@@ -13,6 +13,7 @@ namespace InternshipLink.Web.Data
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        ""
 
         public static DataContext Create()
         {
