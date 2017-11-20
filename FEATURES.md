@@ -21,6 +21,10 @@ Features that have a check mark are complete.
 - [ ] Extend Company with Email, Description, Phone, Address, City
 - [ ] Company CRUD(controller, views, models)
 - [ ] Company list command available to admin users only;
+- [ ] Company list sort by column;
 - [ ] Internship - name, duration, companies, companies interns count, students
 - [ ] Internship CRUD
 - [ ] Internship link module/page
+- [ ] 
+- [ ] 
+- [ ] 
