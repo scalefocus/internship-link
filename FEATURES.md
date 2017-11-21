@@ -45,3 +45,4 @@
 - [ ] Student can look at Major's details
 - [ ] Student can look at Internships' list
 - [ ] Student can look at Internship's details
+- [ ] 
