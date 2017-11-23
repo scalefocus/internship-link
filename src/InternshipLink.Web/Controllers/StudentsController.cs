@@ -7,7 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using InternshipLink.Web.Data;
-
+using Microsoft.AspNet.Identity;
 namespace InternshipLink.Web.Controllers
 {
     public class StudentsController : Controller
@@ -36,6 +36,7 @@ namespace InternshipLink.Web.Controllers
         }
 
         // GET: Students/Create
+        [Authorize(Roles = "Administrator")]
         public ActionResult Create()
         {
             return View();
@@ -46,6 +47,7 @@ namespace InternshipLink.Web.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Create([Bind(Include = "ID,FirstName,LastName")] Student student)
         {
             if (ModelState.IsValid)
@@ -59,6 +61,7 @@ namespace InternshipLink.Web.Controllers
         }
 
         // GET: Students/Edit/5
+        [Authorize(Roles = "Administrator")]
         public ActionResult Edit(long? id)
         {
             if (id == null)
@@ -78,6 +81,7 @@ namespace InternshipLink.Web.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Edit([Bind(Include = "ID,FirstName,LastName")] Student student)
         {
             if (ModelState.IsValid)
@@ -90,6 +94,7 @@ namespace InternshipLink.Web.Controllers
         }
 
         // GET: Students/Delete/5
+        [Authorize(Roles = "Administrator")]
         public ActionResult Delete(long? id)
         {
             if (id == null)
@@ -107,6 +112,7 @@ namespace InternshipLink.Web.Controllers
         // POST: Students/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public ActionResult DeleteConfirmed(long id)
         {
             Student student = db.Students.Find(id);
