@@ -20,7 +20,7 @@ namespace InternshipLink.Web.Data
 
         public  int? StartYear { get; set; }
 
-        [ForeignKey("Major")]
+        
         public int MajorID { get; set; }
 
         
@@ -29,6 +29,7 @@ namespace InternshipLink.Web.Data
         [MaxLength(40)]
         public string LastName { get; set; }
 
+        [ForeignKey(nameof(MajorID))]
         public Major Major { get; set; }
 
         public string FullName { get { return $"{FirstName} {LastName}"; } }

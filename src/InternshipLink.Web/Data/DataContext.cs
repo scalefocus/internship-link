@@ -21,6 +21,8 @@ namespace InternshipLink.Web.Data
 
         public DbSet<Company> Companies { get; set; }
 
+        public DbSet<Major> Majors { get; set; }
+
         public DbSet<Student> Students { get; set; }
     }
 }
