@@ -208,6 +208,10 @@
     <Compile Include="Data\Migrations\201711230716164_addMajorExpandStudent.Designer.cs">
       <DependentUpon>201711230716164_addMajorExpandStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\Migrations\201711230947375_ExtendCompany.cs" />
+    <Compile Include="Data\Migrations\201711230947375_ExtendCompany.Designer.cs">
+      <DependentUpon>201711230947375_ExtendCompany.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Migrations\Configuration.cs" />
     <Compile Include="Data\Student.cs" />
     <Compile Include="Global.asax.cs">
@@ -312,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Migrations\201711230716164_addMajorExpandStudent.resx">
       <DependentUpon>201711230716164_addMajorExpandStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Migrations\201711230947375_ExtendCompany.resx">
+      <DependentUpon>201711230947375_ExtendCompany.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

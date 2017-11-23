@@ -15,5 +15,17 @@ namespace InternshipLink.Web.Data
         public string Name { get; set; }
 
         public int NumberOfEmployees { get; set; }
+
+        [EmailAddress,StringLength(100)]
+        public string Email { get; set; }
+
+        [StringLength(200)]
+        public string Description { get; set; }
+
+        public int ContactNumber { get; set; }
+        
+        public string Address { get; set; }
+
+        public string City { get; set; }
     }
 }
