@@ -195,6 +195,7 @@
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Data\Company.cs" />
     <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Data\Major.cs" />
     <Compile Include="Data\Migrations\201711151239047_Create.cs" />
     <Compile Include="Data\Migrations\201711151239047_Create.Designer.cs">
       <DependentUpon>201711151239047_Create.cs</DependentUpon>
@@ -202,6 +203,10 @@
     <Compile Include="Data\Migrations\201711160743467_AddStudentsAndCompanies.cs" />
     <Compile Include="Data\Migrations\201711160743467_AddStudentsAndCompanies.Designer.cs">
       <DependentUpon>201711160743467_AddStudentsAndCompanies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Migrations\201711230716164_addMajorExpandStudent.cs" />
+    <Compile Include="Data\Migrations\201711230716164_addMajorExpandStudent.Designer.cs">
+      <DependentUpon>201711230716164_addMajorExpandStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Migrations\Configuration.cs" />
     <Compile Include="Data\Student.cs" />
@@ -304,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Migrations\201711160743467_AddStudentsAndCompanies.resx">
       <DependentUpon>201711160743467_AddStudentsAndCompanies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Migrations\201711230716164_addMajorExpandStudent.resx">
+      <DependentUpon>201711230716164_addMajorExpandStudent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -15,11 +16,24 @@ namespace InternshipLink.Web.Data
         public string FirstName { get; set; }
 
         [MaxLength(40)]
+        public string MiddleName { get; set; }
+
+        public  int? StartYear { get; set; }
+
+        [ForeignKey("Major")]
+        public int MajorID { get; set; }
+
+        
+        public int? Group { get; set; }
+
+        [MaxLength(40)]
         public string LastName { get; set; }
+
+        public Major Major { get; set; }
 
         public string FullName { get { return $"{FirstName} {LastName}"; } }
 
-
+        
         //public bool Active { get; set; } = true;
 
         //public DateTime CreatedOn { get; set; } = DateTime.Now;
