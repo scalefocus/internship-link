@@ -196,6 +196,7 @@
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Data\Company.cs" />
     <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Data\Internship.cs" />
     <Compile Include="Data\Major.cs" />
     <Compile Include="Data\Migrations\201711151239047_Create.cs" />
     <Compile Include="Data\Migrations\201711151239047_Create.Designer.cs">
@@ -212,6 +213,10 @@
     <Compile Include="Data\Migrations\201711230947375_ExtendCompany.cs" />
     <Compile Include="Data\Migrations\201711230947375_ExtendCompany.Designer.cs">
       <DependentUpon>201711230947375_ExtendCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Migrations\201711231004446_AddedInternships.cs" />
+    <Compile Include="Data\Migrations\201711231004446_AddedInternships.Designer.cs">
+      <DependentUpon>201711231004446_AddedInternships.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Migrations\Configuration.cs" />
     <Compile Include="Data\Student.cs" />
@@ -325,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Migrations\201711230947375_ExtendCompany.resx">
       <DependentUpon>201711230947375_ExtendCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Migrations\201711231004446_AddedInternships.resx">
+      <DependentUpon>201711231004446_AddedInternships.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
