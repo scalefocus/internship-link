@@ -25,9 +25,9 @@ namespace InternshipLink.Web.Data
         public int CompanyID { get; set; }
 
         [ForeignKey(nameof(StudentID))]
-        public Student Student { get; set; }
+        public virtual ICollection<Student> Student { get; set; }
 
         [ForeignKey(nameof(CompanyID))]
-        public Company Company { get; set; }
+        public virtual ICollection<Company> Company { get; set; }
     }
 }
