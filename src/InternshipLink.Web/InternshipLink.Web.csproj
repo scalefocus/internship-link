@@ -219,6 +219,10 @@
     <Compile Include="Data\Migrations\201711231004446_AddedInternships.Designer.cs">
       <DependentUpon>201711231004446_AddedInternships.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\Migrations\201711280709412_Student Company and App User updates.cs" />
+    <Compile Include="Data\Migrations\201711280709412_Student Company and App User updates.Designer.cs">
+      <DependentUpon>201711280709412_Student Company and App User updates.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Migrations\Configuration.cs" />
     <Compile Include="Data\Student.cs" />
     <Compile Include="Global.asax.cs">
@@ -339,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Data\Migrations\201711231004446_AddedInternships.resx">
       <DependentUpon>201711231004446_AddedInternships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Migrations\201711280709412_Student Company and App User updates.resx">
+      <DependentUpon>201711280709412_Student Company and App User updates.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

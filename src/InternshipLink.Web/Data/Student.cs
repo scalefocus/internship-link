@@ -34,7 +34,12 @@ namespace InternshipLink.Web.Data
 
         public string FullName { get { return $"{FirstName} {LastName}"; } }
 
-        
+        public int UserID { get; set; }
+
+        [ForeignKey(nameof(UserID))]
+        public ApplicationUser User;
+
+
         //public bool Active { get; set; } = true;
 
         //public DateTime CreatedOn { get; set; } = DateTime.Now;
