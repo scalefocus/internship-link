@@ -5,6 +5,9 @@ namespace InternshipLink.Web.Data.Migrations
     using System.Linq;
     using Microsoft.AspNet.Identity.EntityFramework;
     using Microsoft.AspNet.Identity;
+    using System.IO;
+    using System.Configuration;
+    using InternshipLink.Web.Tools;
 
     internal sealed class Configuration : DbMigrationsConfiguration<DataContext>
     {
@@ -17,6 +20,35 @@ namespace InternshipLink.Web.Data.Migrations
 
         protected override void Seed(DataContext context)
         {
+            Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
+            var fileName = ConfigurationManager.AppSettings["ImportStudentsFile"];
+            if (File.Exists(fileName))
+            {
+                using (Stream stream = File.OpenRead(fileName))
+                {
+                    var a = new CsvReader<Student>();
+                    foreach (var item in a.Read(stream))
+                    {
+                        context.Students.AddOrUpdate(item);
+                    }
+                    context.SaveChanges();
+                }
+            }
+            Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
+            fileName = ConfigurationManager.AppSettings["ImportMajorsFile"];
+            if (File.Exists(fileName))
+            {
+                using (Stream stream = File.OpenRead(fileName))
+                {
+                    var a = new CsvReader<Major>();
+                    foreach (var item in a.Read(stream))
+                    {
+                        context.Majors.AddOrUpdate(item);
+                    }
+                    context.SaveChanges();
+                }
+            }
+
             if (!context.Roles.Any())
             {
 
@@ -28,12 +60,12 @@ namespace InternshipLink.Web.Data.Migrations
                 var studentRole = context.Roles.SingleOrDefault(r => r.Name == "Student");
 
                 var hasher = new PasswordHasher();
-            var Major = new Major
-            {
-                Name = "Software technologies and design"
-            };
-            context.Majors.AddOrUpdate(Major);
-            context.SaveChanges();
+                var Major = new Major
+                {
+                    Name = "Software technologies and design"
+                };
+                context.Majors.AddOrUpdate(Major);
+                context.SaveChanges();
 
                 var admin = new ApplicationUser
                 {
